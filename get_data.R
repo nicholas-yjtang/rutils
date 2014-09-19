@@ -2,8 +2,9 @@ library(RCurl)
 #=============================================================
 # @author Nicholas Tang
 # the read data function
-# @filename the target file we wise to write to 
-# @url the url of the location of the original file
+# @param filename the target file we wise to write to 
+# @param url the url of the location of the original file
+# No return is returned
 #==============================================================
 
 get_data <- function(filename, url) { 
@@ -22,8 +23,8 @@ get_data <- function(filename, url) {
 
 #=======================================================
 # Function to download the file
-# @destination the location of the file to download to
-# @fileUrl the location of the file to download from 
+# @param destination the location of the file to download to
+# @param fileUrl the location of the file to download from 
 #========================================================
 download_file <- function (destination, fileUrl) {  
   #set the directory name and filename first
