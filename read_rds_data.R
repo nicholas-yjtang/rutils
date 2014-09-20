@@ -19,6 +19,6 @@ read_rds_data <- function(variable_name, rds_filelocation) {
     }
   }
   else {
-    print (paste0("WARNING: You are going to reuse the variable ",  variable_name) + "\n. If this is not your intention please clear your environment variables")
+    print (paste0("WARNING: You are going to reuse the variable ", variable_name, "\n. If this is not your intention please clear your environment variables"))
   }
 }
