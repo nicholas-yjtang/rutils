@@ -48,7 +48,7 @@ download_file <- function (destination, fileUrl) {
     close(to.write)
 
     #perform the unzip if the filename downloaded is a zip file
-    if (length(grep(".*\\.zip", download_filename)) != 0) {    
+    if (length(grep(".*\\.zip", download_filename, ignore.case=TRUE)) != 0) {    
       unzipped_files <- unzip(download_file_relativepath, exdir = directory_name)    
     } 
   }  
